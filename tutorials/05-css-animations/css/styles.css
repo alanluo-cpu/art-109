@@ -98,6 +98,9 @@ body {
 .caveman {
     animation: spin 10s infinite alternate;
     background-color: darksalmon;
+    color: darksalmon;
+    height: 30px;
+    border-radius: 20px;
 }
 
 @keyframes spin {
