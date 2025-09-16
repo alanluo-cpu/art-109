@@ -56,6 +56,34 @@ body {
     color: black;
 }
 
+.circle {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 100px;
+    animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+    0% {transform: translate(0px, 500px);}
+    100% {transform: translate(500px, 100px);}
+}
+
+.other-circle {
+    background-color: red;
+    width: 75px;
+    height: 75px;
+    margin: 100px;
+    border-radius: 100px;
+    animation: rebound 0.5s infinite alternate;
+}
+
+@keyframes rebound {
+    0% {transform: translate(300px );}
+    100% {transform: translate(700px, 100px);}
+}
+
 .loading {
     animation: stretch 5s infinite alternate;
     background-color: green;
@@ -68,11 +96,11 @@ body {
 }
 
 .caveman {
-    animation: rotate 5s infinite alternate;
+    animation: spin 10s infinite alternate;
     background-color: darksalmon;
 }
 
-@keyframes rotate {
-    from {transform: rotate(0deg, 0deg);}
-    to {transform: rotate(50deg, 50deg);}
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(270deg);}
 }
